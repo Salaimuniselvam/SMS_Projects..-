@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    
+    background: #000;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container img{
+    max-width: 350px;
+    width: 250px;
+    transform-origin: center;
+    transform: perspective(800px)
+    rotateY(180deg);
+    transition: 1s;
+    -webkit-box-reflect: below 1px 
+    linear-
+    gradient(transparent,transparent,#000f);   
+}
+
+.container img:hover{
+    transform: perspective(800px)
+    rotateY(0deg);
+    opacity:1;
+}
+
