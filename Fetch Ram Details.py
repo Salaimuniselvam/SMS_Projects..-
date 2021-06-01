@@ -10,8 +10,8 @@ def get_size(bytes,suffix="B"):
 #Get the memory details..
 svmem=psutil.virtual_memory()
 print(f"Total:{get_size(svmem.total)}")
-print(f"used:{get_size(svmm.used)}")
-print(f"percentage:{svmm.percent}%")
+print(f"used:{get_size(svmem.used)}")
+print(f"percentage:{svmem.percent}%")
 
 #Get the swap memory details (if exists)
 swap=psutil.swap_memory()
